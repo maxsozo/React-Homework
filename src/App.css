@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.people-table {
+  border: 1px solid white;
+}
+
+.th-people {
+  border: 1px solid white;
+}
+
+.name-person {
+  color: rgb(11, 250, 198) ;
+}
