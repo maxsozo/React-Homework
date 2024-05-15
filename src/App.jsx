@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import SimpleComponent from './SimpleComponents.jsx';
+import data from './data.jsx'
 
 export default function App() {
   return (
@@ -17,6 +19,11 @@ export default function App() {
         >
           Learn React
         </a>
+        <ul>
+        {data.map((item, index) => (
+                    <SimpleComponent key={index} {...item} />
+                ))};
+        </ul>
       </header>
     </div>
   );
