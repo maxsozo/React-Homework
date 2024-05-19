@@ -5,6 +5,7 @@ import results from './homeworks/homework_1/exercise_2/people.jsx';
 import ShowPeople from './homeworks/homework_1/exercise_2/ShowPeople.jsx';
 import ShowCartoon from './homeworks/homework_1/exercise_3/ShowCartoon.jsx';
 import dataEpisodes from './homeworks/homework_1/exercise_3/episodes.jsx';
+import Spoiler from './homeworks/homework_2/exercise_1/Spoiler.jsx';
 
 export default function App() {
   return (
@@ -27,7 +28,20 @@ export default function App() {
                     <ShowCartoon key={index} name={item.name} air_date={item.air_date} characters={item.characters} />
                 ))}
         </table>  
+        <Spoiler header={<h1>Заголовок</h1>} open>
+            Контент 1
+            <p>
+                лорем іпсум тралівалі і тп.
+            </p>
+        </Spoiler>
 
+
+        <Spoiler>
+            <h2>Контент 2</h2>
+            <p>
+                лорем іпсум тралівалі і тп.
+            </p>
+        </Spoiler>
       </header>
     </div>
   );
