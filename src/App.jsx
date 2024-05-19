@@ -1,26 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import SimpleComponent from './SimpleComponents.jsx';
-import data from './data.jsx';
-import results from './people.jsx';
-import ShowPeople from './ShowPeople.jsx';
+import SimpleComponent from './homeworks/homework_1/exercise_1/SimpleComponents.jsx';
+import data from './homeworks/homework_1/exercise_1/data.jsx';
+import results from './homeworks/homework_1/exercise_2/people.jsx';
+import ShowPeople from './homeworks/homework_1/exercise_2/ShowPeople.jsx';
+import ShowCartoon from './homeworks/homework_1/exercise_3/ShowCartoon.jsx';
+import dataEpisodes from './homeworks/homework_1/exercise_3/episodes.jsx';
 
 export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
         <ul>
         {data.map((item, index) => (
                     <SimpleComponent key={index} {...item} />
@@ -32,6 +21,12 @@ export default function App() {
                     <ShowPeople key={index} {...item} />
                 ))}
         </table>
+
+        <table>
+          {dataEpisodes.map((item, index) => (
+                    <ShowCartoon key={index} name={item.name} air_date={item.air_date} characters={item.characters} />
+                ))}
+        </table>  
 
       </header>
     </div>

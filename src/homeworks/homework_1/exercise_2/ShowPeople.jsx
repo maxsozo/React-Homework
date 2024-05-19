@@ -1,9 +1,9 @@
-const ShowPeople = (props) => {
+function ShowPeople (props) {
     const { name, height, mass, hair_color, skin_color, eye_color, birth_year, gender } = props;
     
     return (
         <div>
-            <h2 class='name-person'>{name}</h2>
+            <h2 className='name-person'>{name}</h2>
             <p><strong>Height:</strong> {height} cm</p>
             <p><strong>Mass:</strong> {mass} kg</p>
             {gender !== 'n/a' && hair_color !== 'none' && <p><strong>Hair Color:</strong> {hair_color}</p>}
