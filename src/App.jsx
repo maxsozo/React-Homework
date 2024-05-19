@@ -8,6 +8,7 @@ import dataEpisodes from './homeworks/homework_1/exercise_3/episodes.jsx';
 import Spoiler from './homeworks/homework_2/exercise_1/Spoiler.jsx';
 import RangeInput from './homeworks/homework_2/exercise_2/RangeInput.jsx';
 import LoginForm from './homeworks/homework_2/exercise_3/LoginForm.jsx';
+import PasswordConfirm from './homeworks/homework_2/exercise_4/PasswordConfirm.jsx';
 
 export default function App() {
 
@@ -54,6 +55,8 @@ export default function App() {
         <RangeInput min={2} max={10} type="text" className="my-input" onChange={(e) => console.log(e.target.value)} />
         
         <LoginForm onLogin={handleLogin} />
+
+        <PasswordConfirm min={2} />
       </header>
     </div>
   );
