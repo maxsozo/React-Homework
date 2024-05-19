@@ -6,6 +6,7 @@ import ShowPeople from './homeworks/homework_1/exercise_2/ShowPeople.jsx';
 import ShowCartoon from './homeworks/homework_1/exercise_3/ShowCartoon.jsx';
 import dataEpisodes from './homeworks/homework_1/exercise_3/episodes.jsx';
 import Spoiler from './homeworks/homework_2/exercise_1/Spoiler.jsx';
+import RangeInput from './homeworks/homework_2/exercise_2/RangeInput.jsx';
 
 export default function App() {
   return (
@@ -42,6 +43,9 @@ export default function App() {
                 лорем іпсум тралівалі і тп.
             </p>
         </Spoiler>
+
+        <RangeInput min={2} max={10} type="text" className="my-input" onChange={(e) => console.log(e.target.value)} />
+
       </header>
     </div>
   );
