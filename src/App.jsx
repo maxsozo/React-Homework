@@ -9,6 +9,7 @@ import Spoiler from './homeworks/homework_2/exercise_1/Spoiler.jsx';
 import RangeInput from './homeworks/homework_2/exercise_2/RangeInput.jsx';
 import LoginForm from './homeworks/homework_2/exercise_3/LoginForm.jsx';
 import PasswordConfirm from './homeworks/homework_2/exercise_4/PasswordConfirm.jsx';
+import Carousel from './homeworks/homework_2/exercise_5/Carousel.jsx';
 
 export default function App() {
 
@@ -16,6 +17,14 @@ export default function App() {
     console.log('Login:', login)
     console.log('Password:', password)
   }
+
+  const images = [
+    "https://ukrainetrek.com/blog/wp-content/uploads/2016/12/top-10-photos-ukrainian-nature-2016-1.jpg",
+    "https://ukrainetrek.com/blog/wp-content/uploads/2016/12/top-10-photos-ukrainian-nature-2016-2.jpg",
+    "https://ukrainetrek.com/blog/wp-content/uploads/2016/12/top-10-photos-ukrainian-nature-2016-3.jpg",
+    "https://ukrainetrek.com/blog/wp-content/uploads/2016/12/top-10-photos-ukrainian-nature-2016-4.jpg",
+    "https://ukrainetrek.com/blog/wp-content/uploads/2016/12/top-10-photos-ukrainian-nature-2016-5.jpg"
+  ];
 
   return (
     <div className="App">
@@ -57,6 +66,12 @@ export default function App() {
         <LoginForm onLogin={handleLogin} />
 
         <PasswordConfirm min={2} />
+
+        <div className="app">
+          <Carousel images={images} />
+        </div>
+
+
       </header>
     </div>
   );

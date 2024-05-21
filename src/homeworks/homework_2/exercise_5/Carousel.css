@@ -1,0 +1,50 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image-container {
+  position: relative;
+}
+
+.main-image {
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+}
+
+.clickable-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 33%;
+  cursor: pointer;
+}
+
+.clickable-area.left {
+  left: 0;
+}
+
+.clickable-area.right {
+  right: 0;
+}
+
+.thumbnails {
+  display: flex;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.thumbnail.selected {
+  opacity: 1;
+  border: 2px solid #007bff;
+}
