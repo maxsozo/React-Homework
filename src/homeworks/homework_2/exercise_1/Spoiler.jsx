@@ -10,7 +10,7 @@ function Spoiler({header="+", open, children}) {
 
     return (
         <div>
-            <div onClick={toggleOpen} style={{ cursor: 'pointer' }}>
+            <div onClick={toggleOpen} styleName={{ cursor: 'pointer' }}>
                 {header}
             </div>
             {isOpen && <div>{children}</div>}
