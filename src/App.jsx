@@ -10,6 +10,7 @@ import RangeInput from './homeworks/homework_2/exercise_2/RangeInput.jsx';
 import LoginForm from './homeworks/homework_2/exercise_3/LoginForm.jsx';
 import PasswordConfirm from './homeworks/homework_2/exercise_4/PasswordConfirm.jsx';
 import Carousel from './homeworks/homework_2/exercise_5/Carousel.jsx';
+import {Pagination, Content, Color} from './homeworks/homework_2/exercise_6/Pagination.jsx';
 
 export default function App() {
 
@@ -71,7 +72,8 @@ export default function App() {
           <Carousel images={images} />
         </div>
 
-
+        <Pagination max={10} render={Content} />
+        <Pagination max={16} render={Color} />          
       </header>
     </div>
   );
