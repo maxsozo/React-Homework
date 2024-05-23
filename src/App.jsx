@@ -11,6 +11,7 @@ import LoginForm from './homeworks/homework_2/exercise_3/LoginForm.jsx';
 import PasswordConfirm from './homeworks/homework_2/exercise_4/PasswordConfirm.jsx';
 import Carousel from './homeworks/homework_2/exercise_5/Carousel.jsx';
 import {Pagination, Content, Color} from './homeworks/homework_2/exercise_6/Pagination.jsx';
+import Timer from './homeworks/homework_3/exercise_1/Timer.jsx';
 
 export default function App() {
 
@@ -73,7 +74,9 @@ export default function App() {
         </div>
 
         <Pagination max={10} render={Content} />
-        <Pagination max={16} render={Color} />          
+        <Pagination max={16} render={Color} />       
+
+        <Timer sec = {3600} />
       </header>
     </div>
   );
