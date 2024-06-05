@@ -12,6 +12,7 @@ import PasswordConfirm from './homeworks/homework_2/exercise_4/PasswordConfirm.j
 import Carousel from './homeworks/homework_2/exercise_5/Carousel.jsx';
 import {Pagination, Content, Color} from './homeworks/homework_2/exercise_6/Pagination.jsx';
 import Timer from './homeworks/homework_3/exercise_1/Timer.jsx';
+import InputsTime from './homeworks/homework_3/exercise_2/InputsTime.jsx';
 
 export default function App() {
 
@@ -77,6 +78,9 @@ export default function App() {
         <Pagination max={16} render={Color} />       
 
         <Timer sec = {3600} />
+
+        <InputsTime/>
+        
       </header>
     </div>
   );
